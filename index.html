@@ -133,6 +133,16 @@
       background:white;font-size:.88rem;font-weight:700
     }
     .btn.primary{background:var(--primary);color:white;border-color:var(--primary)}
+    .route-list{display:grid;gap:12px;margin-top:14px}
+    .route{
+      display:grid;grid-template-columns:86px 1fr;gap:12px;align-items:start;
+      padding:14px;border:1px solid var(--line);border-radius:16px;background:#fbf9fd
+    }
+    .route-mode{
+      display:inline-grid;place-items:center;padding:5px 8px;border-radius:10px;
+      background:var(--soft);color:var(--primary);font-size:.78rem;font-weight:900
+    }
+    .route p{margin:3px 0 0}
     table{width:100%;border-collapse:collapse;background:white;border-radius:18px;overflow:hidden}
     th,td{padding:12px 13px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
     th{background:#f4eef8}
@@ -169,6 +179,7 @@
       .grid-2,.grid-3{grid-template-columns:1fr}
       .day{grid-template-columns:1fr}
       .day-date{text-align:left}
+      .route{grid-template-columns:1fr}
       .checklist{columns:1}
       .hero{padding:28px}
       table{font-size:.89rem}
@@ -198,9 +209,11 @@
       </div>
       <nav>
         <a href="#roteiro">Roteiro dia a dia</a>
+        <a href="#rotas">Rotas da pousada</a>
+        <a href="#aeroporto">Aeroporto ↔ Gramado</a>
         <a href="#comer">Onde comer</a>
         <a href="#chocolate">Chocolate</a>
-        <a href="#pizza">Pizza & fondue</a>
+        <a href="#pizza">Pizza &amp; fondue</a>
         <a href="#atracoes">Atrações</a>
         <a href="#orcamento">Orçamento</a>
         <a href="#links">Links úteis</a>
@@ -229,6 +242,223 @@
       </div>
     </section>
 
+    <section id="rotas">
+      <div class="section-title">
+        <div>
+          <div class="eyebrow" style="color:var(--primary)">Base da viagem</div>
+          <h2>Rotas saindo da Pousada Habitué</h2>
+        </div>
+        <span class="muted">Toque em “Abrir rota” para navegar.</span>
+      </div>
+
+      <div class="callout">
+        <strong>Ponto de partida fixo:</strong> Avenida das Hortênsias, 849, Centro, Gramado. Os links abaixo abrem o Google Maps com a pousada já preenchida como origem; o aplicativo recalcula caminho, trânsito e duração no momento da saída.
+        <div class="btns">
+          <a class="btn primary" href="https://www.google.com/maps/search/?api=1&amp;query=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS" target="_blank">📍 Ver pousada no mapa</a>
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Aeroporto+Internacional+Salgado+Filho,+Porto+Alegre+-+RS&amp;destination=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;travelmode=driving" target="_blank">POA → pousada</a>
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Aeroporto+Internacional+Salgado+Filho,+Porto+Alegre+-+RS&amp;travelmode=driving" target="_blank">Pousada → POA</a>
+        </div>
+      </div>
+
+      <div class="grid grid-2" style="margin-top:16px">
+        <div class="card">
+          <h3>A pé — centro e parques próximos</h3>
+          <div class="route-list">
+            <div class="route">
+              <span class="route-mode">A PÉ</span>
+              <div><b>Circuito do primeiro dia</b><p class="muted small">Pousada → Praça das Etnias → Rua Torta → Igreja São Pedro → Rua Coberta.</p><div class="btns"><a class="btn primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Rua+Coberta,+Gramado+-+RS&amp;waypoints=Praca+das+Etnias,+Gramado+-+RS%7CRua+Torta,+Gramado+-+RS%7CIgreja+Sao+Pedro,+Gramado+-+RS&amp;travelmode=walking" target="_blank">Abrir rota completa</a></div></div>
+            </div>
+            <div class="route">
+              <span class="route-mode">A PÉ</span>
+              <div><b>Lago Negro</b><p class="muted small">Boa saída para a manhã; a hospedagem é bem posicionada para fazer esse trecho caminhando.</p><div class="btns"><a class="btn primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Lago+Negro,+Gramado+-+RS&amp;travelmode=walking" target="_blank">Abrir rota</a></div></div>
+            </div>
+            <div class="route">
+              <span class="route-mode">A PÉ</span>
+              <div><b>Lago Joaquina Rita Bier</b><p class="muted small">Pode ser combinado com a Rótula das Bandeiras e a volta ao centro.</p><div class="btns"><a class="btn primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Lago+Joaquina+Rita+Bier,+Gramado+-+RS&amp;travelmode=walking" target="_blank">Abrir rota</a></div></div>
+            </div>
+            <div class="route">
+              <span class="route-mode">A PÉ</span>
+              <div><b>Rodoviária de Gramado</b><p class="muted small">Ponto de embarque mais prático para o ônibus rumo a Canela.</p><div class="btns"><a class="btn primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Estacao+Rodoviaria+de+Gramado,+RS&amp;travelmode=walking" target="_blank">Abrir rota</a></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Carro, app ou transfer</h3>
+          <div class="route-list">
+            <div class="route">
+              <span class="route-mode">CARRO</span>
+              <div><b>Fábrica Mágica Florybal</b><p class="muted small">Rua Tristão de Oliveira, 1200. Mais confortável de app do que a pé.</p><div class="btns"><a class="btn primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Fabrica+Magica+Florybal,+Rua+Tristao+de+Oliveira,+1200,+Gramado+-+RS&amp;travelmode=driving" target="_blank">Abrir rota</a></div></div>
+            </div>
+            <div class="route">
+              <span class="route-mode">CARRO</span>
+              <div><b>Parque do Caracol</b><p class="muted small">Se forem de ônibus até Canela, ainda será necessário app, táxi ou transfer até o parque.</p><div class="btns"><a class="btn primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Parque+do+Caracol,+Rodovia+RS-466,+Canela+-+RS&amp;travelmode=driving" target="_blank">Pousada → Caracol</a><a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Estacao+Rodoviaria+de+Canela,+RS&amp;destination=Parque+do+Caracol,+Rodovia+RS-466,+Canela+-+RS&amp;travelmode=driving" target="_blank">Canela → Caracol</a></div></div>
+            </div>
+            <div class="route">
+              <span class="route-mode">CARRO</span>
+              <div><b>Olivas de Gramado</b><p class="muted small">Área rural, a cerca de 14 km do centro, com acesso asfaltado. Combinem também a volta, pois o sunset termina longe da área central.</p><div class="btns"><a class="btn primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Olivas+de+Gramado,+Rua+Vereador+Jose+Alexandre+Benetti,+1808,+Gramado+-+RS&amp;travelmode=driving" target="_blank">Abrir rota</a></div></div>
+            </div>
+            <div class="route">
+              <span class="route-mode">CARRO</span>
+              <div><b>Catedral de Pedra, Canela</b><p class="muted small">Rota direta da pousada para quem optar por carro/app no dia de Canela.</p><div class="btns"><a class="btn primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Catedral+de+Pedra,+Canela+-+RS&amp;travelmode=driving" target="_blank">Abrir rota</a></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <details>
+        <summary>Rotas da pousada para os restaurantes citados</summary>
+        <p class="muted small">Todos os botões partem da Pousada Habitué. Confiram no mapa a unidade correta antes de sair, especialmente nas redes com mais de um endereço.</p>
+        <div class="btns">
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Tempero+de+Gramado,+Gramado+-+RS&amp;travelmode=walking" target="_blank">Tempero de Gramado</a>
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Ita+Restaurante+Sao+Pedro,+Gramado+-+RS&amp;travelmode=walking" target="_blank">Ita São Pedro</a>
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Bella+Brasa,+Gramado+-+RS&amp;travelmode=walking" target="_blank">Bella Brasa</a>
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Restaurante+Vale+Quanto+Pesa,+Gramado+-+RS&amp;travelmode=walking" target="_blank">Vale Quanto Pesa</a>
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Galeto+Italia,+Gramado+-+RS&amp;travelmode=walking" target="_blank">Galeto Itália</a>
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Galeto+Mamma+Mia,+Gramado+-+RS&amp;travelmode=walking" target="_blank">Galeto Mamma Mia</a>
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Cantina+Pastasciutta,+Gramado+-+RS&amp;travelmode=walking" target="_blank">Pastasciutta</a>
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Pizzaria+Scur,+Gramado+-+RS&amp;travelmode=walking" target="_blank">Pizzaria Scur</a>
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Chateau+de+La+Fondue,+Gramado+-+RS&amp;travelmode=walking" target="_blank">Château de La Fondue</a>
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Maison+de+La+Fondue,+Gramado+-+RS&amp;travelmode=walking" target="_blank">Maison de La Fondue</a>
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Catherine+Gramado,+Rua+Emilio+Sorgetz,+200,+Gramado+-+RS&amp;travelmode=walking" target="_blank">Catherine</a>
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Casa+de+Pedra+Mineira,+Canela+-+RS&amp;travelmode=driving" target="_blank">Casa de Pedra Mineira</a>
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Kongo+Pizzaria,+Gramado+-+RS&amp;travelmode=driving" target="_blank">Kongo</a>
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Cara+de+Mau,+Gramado+-+RS&amp;travelmode=walking" target="_blank">Cara de Mau</a>
+        </div>
+      </details>
+
+      <details>
+        <summary>Rotas para atrações opcionais</summary>
+        <div class="btns">
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Prawer+Chocolates+-+Tour+da+Fabrica,+Gramado+-+RS&amp;travelmode=driving" target="_blank">Tour Prawer</a>
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Mini+Mundo,+Gramado+-+RS&amp;travelmode=walking" target="_blank">Mini Mundo</a>
+        </div>
+      </details>
+    </section>
+
+    <section id="aeroporto">
+      <div class="section-title">
+        <div>
+          <div class="eyebrow" style="color:var(--primary)">Chegada e volta</div>
+          <h2>Aeroporto Salgado Filho ↔ Gramado</h2>
+        </div>
+        <span class="muted">Valores consultados em 07/09/2026.</span>
+      </div>
+
+      <div class="callout">
+        <strong>Minha escolha para este roteiro:</strong> Citral na ida e na volta. É a alternativa mais barata, há embarque no desembarque doméstico do aeroporto e a chegada é na Rodoviária de Gramado, de onde a Pousada Habitué fica acessível a pé. Se o voo chegar muito tarde ou partir muito cedo, o transfer privativo passa a ser a alternativa mais segura.
+      </div>
+
+      <div class="grid grid-3" style="margin-top:16px">
+        <div class="card">
+          <span class="tag free">melhor C/B</span>
+          <h3>Ônibus Citral</h3>
+          <div class="budget-big">~R$ 266–354</div>
+          <p class="small muted">Ida e volta do casal. Referência por pessoa/trecho: a partir de R$ 66,55; horários executivos consultados chegavam a R$ 88,45 com seguro.</p>
+          <ul>
+            <li>Viagem geralmente na faixa de 2h30, sujeita a trânsito e clima.</li>
+            <li>Compra disponível com até 180 dias de antecedência.</li>
+            <li>Ônibus executivo com ar-condicionado, wi-fi e banheiro.</li>
+            <li>Na volta, o embarque ocorre na Rodoviária de Gramado.</li>
+          </ul>
+          <div class="btns">
+            <a class="btn primary" href="https://www.citral.tur.br/site/default.asp?SecaoID=737073&amp;SubsecaoID=0&amp;TroncoID=638072" target="_blank">Como funciona</a>
+            <a class="btn" href="https://citral.passagensweb.com.br/" target="_blank">Comprar passagem</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="tag pay">porta a porta</span>
+          <h3>Transfer regular</h3>
+          <div class="budget-big">~R$ 658</div>
+          <p class="small muted">Ida e volta do casal pela tarifa Turistur consultada: a partir de R$ 329 por pessoa para os dois trechos.</p>
+          <ul>
+            <li>Estimativa divulgada de aproximadamente 2 horas.</li>
+            <li>Recepção no aeroporto e desembarque na hospedagem.</li>
+            <li>Pode haver espera de até 50 minutos após o desembarque.</li>
+            <li>Confirmar se a Pousada Habitué está na lista de atendimento.</li>
+          </ul>
+          <div class="btns">
+            <a class="btn primary" href="https://www.turistur.tur.br/servicos/transfers" target="_blank">Consultar Turistur</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <span class="tag romance">mais confortável</span>
+          <h3>Transfer privativo</h3>
+          <div class="budget-big">R$ 700–770</div>
+          <p class="small muted">Ida e volta por veículo de até 4 passageiros na cotação publicada pela FL Tour: R$ 700 no Pix ou R$ 770 parcelado.</p>
+          <ul>
+            <li>Horário alinhado ao voo e transporte exclusivo.</li>
+            <li>Melhor para voo fora da grade do ônibus ou muita bagagem.</li>
+            <li>Confirmar política para atraso, cadeirinha e limite de malas.</li>
+            <li>Pedir confirmação escrita do valor total dos dois trechos.</li>
+          </ul>
+          <div class="btns">
+            <a class="btn primary" href="https://www.fltourgramado.com.br/" target="_blank">Consultar FL Tour</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid grid-2" style="margin-top:16px">
+        <div class="card">
+          <h3>Ida: POA → Pousada Habitué</h3>
+          <ol>
+            <li>Deixem uma folga entre o pouso e o ônibus para desembarque e retirada das malas.</li>
+            <li>Com passagem online, apresentem o BP-e no celular na loja Citral Serra, próxima ao desembarque doméstico.</li>
+            <li>A equipe indica o ponto de embarque. Se o voo atrasar, a Citral informa que realoca no próximo horário sem custo adicional, sujeito a lugar disponível.</li>
+            <li>Desçam na Rodoviária de Gramado e sigam a pé para a pousada; com chuva ou malas pesadas, chamem um app.</li>
+          </ol>
+          <div class="btns">
+            <a class="btn primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=Estacao+Rodoviaria+de+Gramado,+RS&amp;destination=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;travelmode=walking" target="_blank">🧭 Rodoviária → pousada</a>
+            <a class="btn" href="https://portoalegre-airport.com.br/pt/painel-de-voos" target="_blank">Painel de voos POA</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Volta: pousada → POA</h3>
+          <ol>
+            <li>Comprem a volta junto com a ida para garantir o horário desejado.</li>
+            <li>A Citral recomenda sair de Gramado <b>pelo menos 5 horas antes do voo</b>.</li>
+            <li>Cheguem à rodoviária cerca de 20–30 minutos antes do embarque, com passagem e documentos acessíveis.</li>
+            <li>Não montem a sexta-feira com atração paga: preservem margem para trânsito, chuva e mudança de horário.</li>
+          </ol>
+          <div class="btns">
+            <a class="btn primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Estacao+Rodoviaria+de+Gramado,+RS&amp;travelmode=walking" target="_blank">🧭 Pousada → rodoviária</a>
+            <a class="btn" href="https://www.citral.tur.br/site/default.asp?Destino=38&amp;Origem=13&amp;SecaoID=849473&amp;SubsecaoID=0&amp;TroncoID=638072" target="_blank">Horários Gramado → POA</a>
+          </div>
+        </div>
+      </div>
+
+      <details>
+        <summary>E carro alugado, táxi ou aplicativo?</summary>
+        <p><b>Carro alugado:</b> oferece autonomia para Caracol e Olivas, mas acrescenta locação, combustível, seguro e estacionamento. Neste roteiro, grande parte do centro é feita a pé; por isso, só tende a compensar se vocês quiserem ampliar os passeios fora de Gramado.</p>
+        <p><b>Táxi ou aplicativo:</b> serve como plano B, mas o preço é dinâmico e uma corrida longa depende de o motorista aceitar. Façam a simulação no aplicativo após retirar as malas e comparem com um transfer privativo confirmado — não contem com o app como única opção para um voo cedo.</p>
+        <div class="btns">
+          <a class="btn" href="https://portoalegre-airport.com.br/pt/guia-do-passageiro" target="_blank">Guia oficial do aeroporto</a>
+          <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Aeroporto+Internacional+Salgado+Filho,+Porto+Alegre+-+RS&amp;destination=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;travelmode=driving" target="_blank">Ver trajeto rodoviário</a>
+        </div>
+      </details>
+
+      <div class="card" style="margin-top:16px">
+        <h3>Vídeos para visualizar o deslocamento</h3>
+        <div class="grid grid-2">
+          <div>
+            <p><b>Ruy Viaja — como ir de ônibus do Aeroporto de Porto Alegre a Gramado</b></p>
+            <p class="small muted">Mostra a lógica do embarque e do trajeto. Publicado em 2022: use para orientação visual, nunca para preço ou horário de 2027.</p>
+            <div class="btns"><a class="btn primary" href="https://www.youtube.com/watch?v=zihOSz4B_ZA" target="_blank">▶ Assistir</a></div>
+          </div>
+          <div>
+            <p><b>Aeroporto de Porto Alegre + como chegar em Gramado</b></p>
+            <p class="small muted">Visão geral do terminal e das opções de transporte. Também é anterior à viagem; valide qualquer procedimento na Citral e no aeroporto.</p>
+            <div class="btns"><a class="btn primary" href="https://www.youtube.com/watch?v=5Yk03o4AMhQ" target="_blank">▶ Assistir</a></div>
+          </div>
+        </div>
+      </div>
+
+      <p class="small muted">Os preços acima são referências de setembro de 2026, não reservas para janeiro de 2027. Horários, tarifas, disponibilidade, seguro e regras de bagagem devem ser conferidos no fechamento da compra.</p>
+    </section>
+
     <section id="roteiro">
       <div class="section-title">
         <div>
@@ -247,9 +477,11 @@
             <div class="slot"><b>15:00+</b> Check-in e descanso.</div>
             <div class="slot"><b>17:00</b> Praça das Etnias + Casa do Colono. Provar cuca/pão colonial é um ótimo “lanche de chegada”. <span class="tag free">acesso livre</span></div>
             <div class="slot"><b>18:00</b> Rua Torta → Igreja São Pedro → Fonte do Amor Eterno → Palácio dos Festivais → Rua Coberta. <span class="tag free">grátis</span> <span class="tag romance">casal</span></div>
-            <div class="slot"><b>20:00</b> Jantar sem exagero: Vale Quanto Pesa ou Bella Brasa; guardem o fondue para outra noite.</div>
+            <div class="slot"><b>20:00</b> Jantar de chegada perto da pousada: Galeto Itália para uma primeira refeição típica; Vale Quanto Pesa ou Bella Brasa se preferirem algo mais simples. Guardem o fondue para outra noite.</div>
           </div>
           <div class="btns">
+            <a class="btn primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Rua+Coberta,+Gramado+-+RS&amp;waypoints=Praca+das+Etnias,+Gramado+-+RS%7CRua+Torta,+Gramado+-+RS%7CIgreja+Sao+Pedro,+Gramado+-+RS&amp;travelmode=walking" target="_blank">🧭 Rota a pé da pousada</a>
+            <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Galeto+Italia,+Gramado+-+RS&amp;travelmode=walking" target="_blank">🧭 Galeto Itália</a>
             <a class="btn primary" href="https://gramadoinesquecivel.tur.br/roteiro/gramado-a-pe" target="_blank">Roteiro oficial a pé</a>
             <a class="btn" href="https://gramadoinesquecivel.tur.br/experiencia/praca-das-etnias-casa-do-colono" target="_blank">Praça das Etnias</a>
             <a class="btn" href="https://gramadoinesquecivel.tur.br/experiencia/igreja-sao-pedro" target="_blank">Igreja São Pedro</a>
@@ -267,9 +499,12 @@
             <div class="slot"><b>12:00</b> Almoço de buffet: Tempero de Gramado ou Ita São Pedro. Faixa observada hoje: cerca de <span class="price">R$ 40–60 por pessoa</span>.</div>
             <div class="slot"><b>14:30</b> Fábrica Mágica Florybal: visitação gratuita pelo corredor da fábrica e breve degustação. <span class="tag free">grátis</span></div>
             <div class="slot"><b>17:00</b> Volta ao hotel / descanso.</div>
-            <div class="slot"><b>19:30</b> Noite de fondue. Priorizar cupom oficial quando abrir a agenda de janeiro de 2027.</div>
+            <div class="slot"><b>19:30</b> Noite de fondue no Château de La Fondue, o melhor encaixe entre tradição e promoção neste roteiro. Priorizar cupom oficial quando abrir a agenda de janeiro de 2027.</div>
           </div>
           <div class="btns">
+            <a class="btn primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Lago+Negro,+Gramado+-+RS&amp;travelmode=walking" target="_blank">🧭 Pousada → Lago Negro</a>
+            <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Centro+de+Gramado,+RS&amp;waypoints=Lago+Negro,+Gramado+-+RS%7CLago+Joaquina+Rita+Bier,+Gramado+-+RS%7CRotula+das+Bandeiras,+Gramado+-+RS&amp;travelmode=walking" target="_blank">🧭 Circuito da manhã</a>
+            <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Fabrica+Magica+Florybal,+Rua+Tristao+de+Oliveira,+1200,+Gramado+-+RS&amp;travelmode=driving" target="_blank">🧭 Pousada → Florybal</a>
             <a class="btn primary" href="https://www.gramadoinesquecivel.tur.br/experiencia/lago-negro" target="_blank">Lago Negro</a>
             <a class="btn" href="https://www.florybal.com.br/f%C3%A1brica-m%C3%A1gica" target="_blank">Fábrica Florybal</a>
             <a class="btn" href="https://chateaudelafondue.com.br/offers" target="_blank">Ofertas Château</a>
@@ -283,16 +518,21 @@
         <div>
           <h3>Canela e Cascata do Caracol</h3>
           <div class="timeline">
-            <div class="slot"><b>08:00</b> Ônibus Gramado → Canela como opção econômica. A tarifa circular consultada em set/2026 estava em <span class="price">R$ 6,95 por trecho/pessoa</span>; reconfirmar perto da viagem.</div>
+            <div class="slot"><b>08:00</b> Caminhada da pousada até a Rodoviária de Gramado e ônibus Gramado → Canela como opção econômica. A tarifa circular consultada em set/2026 estava em <span class="price">R$ 6,95 por trecho/pessoa</span>; reconfirmar perto da viagem.</div>
             <div class="slot"><b>09:00</b> Parque do Caracol. Bilhete adulto consultado em set/2026: <span class="price">R$ 134,90 por pessoa</span>. Para custo-benefício, ficar no ingresso base e dispensar adicionais de aventura.</div>
-            <div class="slot"><b>12:30</b> Almoço em Canela, preferindo buffet/prato do dia fora das atrações.</div>
+            <div class="slot"><b>12:30</b> Almoço na Casa de Pedra Mineira, atrás da Catedral: cozinha brasileira, localização prática e boa reputação de custo-benefício. Se estiver lotada, procurem o prato do dia no centro.</div>
             <div class="slot"><b>14:30</b> Catedral de Pedra + centro de Canela. <span class="tag free">passeio externo grátis</span></div>
             <div class="slot"><b>17:00</b> Retorno a Gramado e descanso.</div>
-            <div class="slot"><b>20:00</b> Jantar italiano ou pizza tradicional.</div>
+            <div class="slot"><b>20:00</b> Pizzaria Scur: rodízio tradicional com mais de 80 sabores, sem pagar o adicional de um restaurante-show. Referência atual: <span class="price">R$ 129,90 por pessoa</span>, sem bebidas/serviço.</div>
           </div>
           <div class="btns">
+            <a class="btn primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Estacao+Rodoviaria+de+Gramado,+RS&amp;travelmode=walking" target="_blank">🧭 Pousada → Rodoviária</a>
+            <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Estacao+Rodoviaria+de+Canela,+RS&amp;destination=Parque+do+Caracol,+Rodovia+RS-466,+Canela+-+RS&amp;travelmode=driving" target="_blank">🧭 Canela → Caracol</a>
+            <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Parque+do+Caracol,+Rodovia+RS-466,+Canela+-+RS&amp;destination=Catedral+de+Pedra,+Canela+-+RS&amp;travelmode=driving" target="_blank">🧭 Caracol → Catedral</a>
+            <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Parque+do+Caracol,+Rodovia+RS-466,+Canela+-+RS&amp;destination=Casa+de+Pedra+Mineira,+Canela+-+RS&amp;travelmode=driving" target="_blank">🧭 Caracol → almoço</a>
+            <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Pizzaria+Scur,+Rua+Sao+Pedro,+660,+Gramado+-+RS&amp;travelmode=walking" target="_blank">🧭 Pousada → Scur</a>
             <a class="btn primary" href="https://www.parquecaracol.com.br/ingressos" target="_blank">Ingresso Caracol</a>
-            <a class="btn" href="https://citral.tur.br/site/default.asp?Destino=14&Origem=13&SecaoID=849473&TroncoID=638072" target="_blank">Ônibus Gramado → Canela</a>
+            <a class="btn" href="https://citral.tur.br/site/default.asp?Destino=14&amp;Origem=13&amp;SecaoID=849473&amp;TroncoID=638072" target="_blank">Ônibus Gramado → Canela</a>
           </div>
           <p class="small muted">Dica: o ônibus leva vocês ao centro de Canela; para o Parque do Caracol ainda será necessário combinar transporte local. Compare táxi/app com eventuais transfers do parque no mês da viagem.</p>
         </div>
@@ -307,9 +547,12 @@
             <div class="slot"><b>11:30</b> Almoço econômico no Ita São Pedro / Tempero de Gramado / Bella Brasa.</div>
             <div class="slot"><b>13:30</b> Descanso no hotel. Sim, de propósito — lua de mel não precisa parecer excursão escolar 😄.</div>
             <div class="slot"><b>15:00+</b> Olivas de Gramado para ficar até o sunset. Ingresso adulto consultado em set/2026: <span class="price">R$ 149 por pessoa</span>. <span class="tag pay">pago</span> <span class="tag romance">melhor clima de casal</span></div>
-            <div class="slot"><b>20:00</b> Jantar leve depois do Olivas; não vale emendar outro jantar caríssimo.</div>
+            <div class="slot"><b>20:00</b> Jantar leve depois do Olivas. <b>Upgrade de lua de mel:</b> reservar o Catherine para alta gastronomia francesa; planejem cerca de <span class="price">R$ 360–550+ o casal</span>, conforme pratos, bebidas e serviço.</div>
           </div>
           <div class="btns">
+            <a class="btn primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Olivas+de+Gramado,+Rua+Vereador+Jose+Alexandre+Benetti,+1808,+Gramado+-+RS&amp;travelmode=driving" target="_blank">🧭 Pousada → Olivas</a>
+            <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Olivas+de+Gramado,+Rua+Vereador+Jose+Alexandre+Benetti,+1808,+Gramado+-+RS&amp;destination=Catherine+Gramado,+Rua+Emilio+Sorgetz,+200,+Gramado+-+RS&amp;travelmode=driving" target="_blank">🧭 Olivas → Catherine</a>
+            <a class="btn" href="https://catherinegramado.com.br/menu/" target="_blank">Menu Catherine</a>
             <a class="btn primary" href="https://loja.olivasdegramado.com.br/produto/vitrine/Ingressos" target="_blank">Ingressos Olivas</a>
             <a class="btn" href="https://www.olivasdegramado.com.br/" target="_blank">Site oficial</a>
           </div>
@@ -326,10 +569,13 @@
           <div class="timeline">
             <div class="slot"><b>09:00</b> Café e última caminhada pelo centro.</div>
             <div class="slot"><b>10:00</b> Casa do Colono para levar produtos locais; é mais interessante comprar cuca, geleia, salame e queijo do que gastar tudo em souvenir genérico.</div>
-            <div class="slot"><b>11:00</b> Última rodada de chocolates comparando preço por peso e kits, em vez de comprar na primeira loja.</div>
-            <div class="slot"><b>12:00+</b> Almoço / checkout / deslocamento conforme o horário de volta.</div>
+            <div class="slot"><b>10:45</b> Última rodada de chocolates comparando preço por peso e kits, em vez de comprar na primeira loja.</div>
+            <div class="slot"><b>11:00</b> Checkout e malas guardadas na pousada, se a hospedagem permitir.</div>
+            <div class="slot"><b>11:30+</b> Cantina Pastasciutta para o último almoço, somente se o horário de saída ao aeroporto deixar folga. Caso contrário, façam uma refeição rápida perto da rodoviária.</div>
           </div>
           <div class="btns">
+            <a class="btn primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Casa+do+Colono+-+Praca+das+Etnias,+Gramado+-+RS&amp;travelmode=walking" target="_blank">🧭 Pousada → Casa do Colono</a>
+            <a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Cantina+Pastasciutta,+Av.+Borges+de+Medeiros,+2083,+Gramado+-+RS&amp;travelmode=walking" target="_blank">🧭 Pousada → Pastasciutta</a>
             <a class="btn primary" href="https://gramadoinesquecivel.tur.br/experiencia/praca-das-etnias-casa-do-colono" target="_blank">Casa do Colono</a>
           </div>
         </div>
@@ -340,9 +586,55 @@
       <div class="section-title">
         <div>
           <div class="eyebrow" style="color:var(--primary)">Culinária</div>
-          <h2>Onde comer sem torrar o orçamento</h2>
+          <h2>Os melhores restaurantes para este roteiro</h2>
         </div>
       </div>
+      <div class="grid grid-3">
+        <div class="card">
+          <span class="tag romance">melhor romântico</span>
+          <h3>Catherine</h3>
+          <p>Alta gastronomia francesa com ingredientes regionais. É o upgrade para uma única noite realmente especial, não uma escolha de economia.</p>
+          <p class="small muted">Pratos principais consultados: cerca de R$ 152–223; couvert R$ 27 por pessoa. Reservar antes.</p>
+          <div class="btns"><a class="btn primary" href="https://catherinegramado.com.br/menu/" target="_blank">Menu oficial</a><a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Catherine+Gramado,+Rua+Emilio+Sorgetz,+200,+Gramado+-+RS&amp;travelmode=walking" target="_blank">Abrir rota</a></div>
+        </div>
+        <div class="card">
+          <span class="tag pay">melhor italiano</span>
+          <h3>Cantina Pastasciutta</h3>
+          <p>Clássico de Gramado com massas artesanais e pratos fartos. A unidade tradicional fica na Avenida Borges de Medeiros, 2083.</p>
+          <p class="small muted">Melhor encaixe: almoço de despedida, se o horário do aeroporto permitir.</p>
+          <div class="btns"><a class="btn primary" href="https://www.pastasciutta.com.br/nossas-casas/cantina-pastasciutta-gramado/" target="_blank">Site e reserva</a><a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Cantina+Pastasciutta,+Av.+Borges+de+Medeiros,+2083,+Gramado+-+RS&amp;travelmode=walking" target="_blank">Abrir rota</a></div>
+        </div>
+        <div class="card">
+          <span class="tag pay">melhor pizza tradicional</span>
+          <h3>Pizzaria Scur</h3>
+          <p>Aberta desde 1980, oferece rodízio com mais de 80 sabores. Mantém a experiência de Gramado sem cobrar pelo espetáculo temático.</p>
+          <p class="small muted">R$ 129,90 por adulto; diariamente, por ordem de chegada, das 18h15 às 23h.</p>
+          <div class="btns"><a class="btn primary" href="https://www.pizzariascur.com.br/" target="_blank">Site oficial</a><a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Pizzaria+Scur,+Rua+Sao+Pedro,+660,+Gramado+-+RS&amp;travelmode=walking" target="_blank">Abrir rota</a></div>
+        </div>
+        <div class="card">
+          <span class="tag romance">melhor fondue C/B</span>
+          <h3>Château de La Fondue</h3>
+          <p>Casa tradicional desde 1986. A referência de setembro de 2026 era R$ 238 pela sequência noturna do casal.</p>
+          <p class="small muted">A oferta terminava em outubro de 2026; só entra no roteiro se surgir promoção semelhante para janeiro.</p>
+          <div class="btns"><a class="btn primary" href="https://chateaudelafondue.com.br/offers" target="_blank">Ver ofertas</a><a class="btn" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Chateau+de+La+Fondue,+Rua+Coronel+Joao+Correa,+156,+Gramado+-+RS&amp;travelmode=walking" target="_blank">Abrir rota</a></div>
+        </div>
+        <div class="card">
+          <span class="tag free">melhor em Canela</span>
+          <h3>Casa de Pedra Mineira</h3>
+          <p>Cozinha brasileira atrás da Catedral de Pedra. É a escolha mais prática para sair do Caracol, almoçar e continuar o centro de Canela a pé.</p>
+          <p class="small muted">Boa reputação de custo-benefício; consultar cardápio e preço no dia.</p>
+          <div class="btns"><a class="btn primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=Parque+do+Caracol,+Rodovia+RS-466,+Canela+-+RS&amp;destination=Casa+de+Pedra+Mineira,+Canela+-+RS&amp;travelmode=driving" target="_blank">Caracol → restaurante</a></div>
+        </div>
+        <div class="card">
+          <span class="tag free">melhor na chegada</span>
+          <h3>Galeto Itália</h3>
+          <p>Galeto, massas e acompanhamentos em uma opção próxima da pousada. Bom primeiro jantar sem deslocamento complicado.</p>
+          <p class="small muted">Se o voo atrasar, troquem por algo rápido nas redondezas em vez de perder reserva.</p>
+          <div class="btns"><a class="btn primary" href="https://www.google.com/maps/dir/?api=1&amp;origin=Pousada+Habitue,+Av.+das+Hortensias,+849,+Gramado+-+RS&amp;destination=Galeto+Italia,+Gramado+-+RS&amp;travelmode=walking" target="_blank">Abrir rota</a></div>
+        </div>
+      </div>
+
+      <h3 style="margin-top:24px">Mais opções econômicas e tradicionais</h3>
       <div class="grid grid-2">
         <div class="card">
           <h3>Almoço econômico</h3>
@@ -398,7 +690,7 @@
     <section id="pizza">
       <div class="section-title">
         <div>
-          <div class="eyebrow" style="color:var(--primary)">Pizza & fondue</div>
+          <div class="eyebrow" style="color:var(--primary)">Pizza &amp; fondue</div>
           <h2>Onde vale gastar — e onde é “experiência”</h2>
         </div>
       </div>
@@ -408,7 +700,7 @@
           <table>
             <thead><tr><th>Opção</th><th>Faixa atual</th><th>Leitura</th></tr></thead>
             <tbody>
-              <tr><td><b>Pizzaria Scur</b></td><td>~R$ 80–140/pessoa</td><td>Pizza tradicional; escolha racional para quem quer comer bem sem pagar pelo show.</td></tr>
+              <tr><td><b>Pizzaria Scur</b></td><td>R$ 129,90/pessoa</td><td>Pizza tradicional; escolha racional para quem quer comer bem sem pagar pelo show. Valor oficial consultado em set/2026.</td></tr>
               <tr><td><b>Vale Quanto Pesa</b></td><td>~R$ 60–140/pessoa</td><td>Prático, central e flexível para uma noite mais econômica.</td></tr>
               <tr><td><b>Kongo</b></td><td>a partir de ~R$ 199,90/pessoa</td><td><span class="tag splurge">experiência</span> Show + rodízio. Legal, mas não é custo-benefício puro.</td></tr>
               <tr><td><b>Cara de Mau</b></td><td>a partir de ~R$ 249–290/pessoa</td><td><span class="tag splurge">luxo turístico</span> Excelente espetáculo, porém caro para o objetivo deste roteiro.</td></tr>
@@ -480,7 +772,10 @@
           <p class="muted">Adicionando tour Prawer e/ou uma pizzaria temática. Hotel, passagens e transfer de chegada/saída não entram nestes valores.</p>
         </div>
       </div>
-      <p class="small muted">Estimativas de planejamento com preços observados em setembro de 2026. Janeiro de 2027 pode ter reajustes. Bebidas alcoólicas, serviço, transporte por aplicativo, estacionamento e compras pessoais podem alterar bastante a conta.</p>
+      <p class="small muted">Estimativas de planejamento com preços observados em setembro de 2026. Janeiro de 2027 pode ter reajustes. Bebidas alcoólicas, serviço, transporte por aplicativo, estacionamento e compras pessoais podem alterar bastante a conta. O deslocamento POA ↔ Gramado é calculado separadamente na <a href="#aeroporto">seção do aeroporto</a>.</p>
+      <div class="callout" style="margin-top:14px">
+        <strong>Se incluírem o Catherine:</strong> adicionem aproximadamente R$ 360–550+ ao planejamento do casal ou usem esse jantar no lugar de outra refeição especial. Ele não está embutido no orçamento equilibrado acima.
+      </div>
     </section>
 
     <section>
@@ -541,12 +836,16 @@
         <summary>Checklist de compras antes da viagem</summary>
         <ul class="checklist">
           <li>Checar previsão 5–7 dias antes</li>
+          <li>Comprar ida e volta da Citral após confirmar os voos</li>
+          <li>Salvar BP-e e localizadores no celular</li>
+          <li>Escolher retorno saindo 5 h antes do voo</li>
           <li>Comprar Caracol só quando houver boa janela de tempo</li>
           <li>Ver oferta do Olivas</li>
           <li>Pesquisar cupom oficial de fondue</li>
           <li>Confirmar horário do ônibus Gramado–Canela</li>
           <li>Salvar mapa offline</li>
           <li>Reservar restaurante especial se necessário</li>
+          <li>Reservar o Catherine se escolherem o upgrade romântico</li>
           <li>Separar uma tarde sem programação</li>
         </ul>
       </details>
@@ -555,7 +854,7 @@
     <section>
       <div class="callout">
         <strong>Minha combinação favorita para vocês:</strong>
-        Lago Negro + centro gratuito + fábrica Florybal + Parque do Caracol + Olivas no sunset + uma noite de fondue + uma noite de pizza tradicional. É o ponto em que a viagem ainda se sente “lua de mel em Gramado”, mas sem pagar ingresso ou jantar-show todos os dias.
+        Lago Negro + centro gratuito + fábrica Florybal + Parque do Caracol + Olivas no sunset + Château de La Fondue com promoção + Pizzaria Scur + Pastasciutta se o voo permitir. Catherine fica como upgrade opcional. É o ponto em que a viagem ainda se sente “lua de mel em Gramado”, mas sem pagar ingresso ou jantar-show todos os dias.
       </div>
     </section>
   </main>
@@ -564,11 +863,21 @@
     <div class="wrap">
       <b>Referências consultadas em 07/09/2026.</b>
       <ul class="source-list">
+        <li>Pousada Habitué: endereço confirmado na Avenida das Hortênsias, 849; usado como origem de todas as rotas.</li>
+        <li><a href="https://www.citral.tur.br/site/default.asp?SecaoID=737073&amp;SubsecaoID=0&amp;TroncoID=638072" target="_blank">Citral — embarque no aeroporto</a>: tarifa a partir de R$ 66,55, compra com até 180 dias, ponto de atendimento, política para atraso do voo e margem recomendada para o retorno.</li>
+        <li><a href="https://www.citral.tur.br/site/default.asp?Destino=38&amp;Origem=13&amp;SecaoID=849473&amp;SubsecaoID=0&amp;TroncoID=638072" target="_blank">Citral — Gramado → Aeroporto</a>: horários e tarifas usados como referência para o ônibus executivo.</li>
+        <li><a href="https://www.turistur.tur.br/servicos/transfers" target="_blank">Turistur</a>: transfer regular a partir de R$ 165 por trecho ou R$ 329 ida e volta, por pessoa.</li>
+        <li><a href="https://www.fltourgramado.com.br/" target="_blank">FL Tour</a>: transfer privativo ida e volta para até 4 passageiros por R$ 700 no Pix ou R$ 770 parcelado.</li>
+        <li><a href="https://portoalegre-airport.com.br/pt/importante-rota-de-chegada-a-serra-gaucha-porto-alegre-airport-traz-previa-do-que-se-encontra-no-destino" target="_blank">Porto Alegre Airport</a>: Citral, Turistur e Brocker possuem atendimento de transporte na área de desembarque.</li>
+        <li><a href="https://catherinegramado.com.br/menu/" target="_blank">Catherine</a>: cardápio, valores, endereço e horários usados para o jantar romântico opcional.</li>
+        <li><a href="https://www.pastasciutta.com.br/nossas-casas/cantina-pastasciutta-gramado/" target="_blank">Cantina Pastasciutta</a>: unidade tradicional, endereço, horário e reservas.</li>
+        <li><a href="https://www.pizzariascur.com.br/" target="_blank">Pizzaria Scur</a>: valor do rodízio, horário, endereço e funcionamento por ordem de chegada.</li>
+        <li><a href="https://www.tripadvisor.com.br/Restaurant_Review-g775227-d12352338-Reviews-Casa_de_Pedra_Mineira-Canela_State_of_Rio_Grande_do_Sul.html" target="_blank">Casa de Pedra Mineira</a>: localização atrás da Catedral e avaliações de custo-benefício.</li>
         <li>Secretaria de Turismo de Gramado: Lago Negro, Rua Coberta, Igreja São Pedro, Praça das Etnias e roteiros a pé.</li>
         <li>Parque do Caracol: ingresso adulto R$ 134,90 e funcionamento em dias úteis.</li>
-        <li>Olivas de Gramado: ingresso adulto R$ 149.</li>
+        <li>Olivas de Gramado: ingresso adulto R$ 149 e endereço oficial na Rua Vereador José Alexandre Benetti, 1808, a 14 km do centro.</li>
         <li>Prawer: tour e degustação R$ 69 em dias úteis.</li>
-        <li>Florybal: visitação gratuita da Fábrica Mágica.</li>
+        <li>Florybal: visitação gratuita da Fábrica Mágica e endereço oficial na Rua Tristão de Oliveira, 1200.</li>
         <li>Citral: tarifa circular Gramado–Canela consultada a R$ 6,95 por trecho.</li>
         <li>Château / Maison de La Fondue: ofertas promocionais vigentes em 2026, usadas apenas como referência para planejamento.</li>
       </ul>
